@@ -12,7 +12,27 @@
 		.pic1{max-width:80px;max-height:50px}
 		.pic2{width:300px}
 		.item1-8{text-align:center;background-color:#e2f6f8;margin:5}
-   		
+   		@media all and (min-width: 480px) and (max-width: 800px) 
+            {
+                #container {width: auto; max-width: 800px;}
+                #main {width: 70%; float: left;}
+                #sidebar {width: 30%; float: left; margin-bottom: 10px;}
+                #pub {width: 30%; margin-left: 70%; float: none;} 
+            } 
+	
+	        @media all and (min-width: 400px) and (max-width: 480px)
+            {
+                #container {width: auto; max-width: 480px;}
+                #main, #sidebar, #pub {width: 100%; float: none;}
+                h1 {position: absolute; top: 0; height: 30px; width: 100%;}
+                #sidebar {position: absolute; top: 40px; height: 40px;}
+                #sidebar p {display: none;}
+                #sidebar ul {padding: 0; margin-top: 10px; overflow: hidden;}
+                #sidebar ul li {display: inline; font-size: 15px;}
+                #main {position: absolute; top: 80px;}
+                #pub, #footer {display: none;}
+            }
+		
    	</style>
  </head>
  	<body style="margin:0 0">
